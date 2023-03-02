@@ -46,7 +46,7 @@ header{
 
 h1, h2, h3{
 	text-align: center; /* center align the text */
-	font-family: 'Seymour One', sans-serif; /* use a web font here (instructions on page) */
+	font-family: var(--heading-fonts); /* use a web font here (instructions on page) */
 	font-variant: small-caps; /* make the heading text all small caps style */
 }
 
@@ -59,7 +59,7 @@ h2{
 h3{
 	margin: 0;
 	padding: 4px;
-	text-decoration: underline solid var(--mint);/* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
+	text-decoration: solid underline var(--mint) 2px; /* add an underline like the one on the h2s to the h3s, but make it solid and mint color */
 }
 
 nav{
@@ -79,9 +79,9 @@ nav a{
 	background-color: var(--tiffany);
 	color: var(--dk-gray); /* set the font color to #222 (--dk-gray) */
 	text-align: center; /* center align the text */
-	text-decoration: none;/* remove the underline */
+	text-decoration: none; /* remove the underline */
 	font-size: 1.2rem; /* make the font's size 1.2rem */
-	font-weight: bolder(600);/* make the font bolder (600) */
+	font-weight: 600; /* make the font bolder (600) */
 }
 
 nav a:hover{
@@ -104,7 +104,7 @@ section{
 p{
 	max-width: 55ch; /* set a max-width of 55 characters */
 	text-indent: 2rem; /* add an indent on the first line of 2rem */
-	margin: auto; /* center those paragraphs (not the text) on the page */
+	margin: 0 auto; /* center those paragraphs (not the text) on the page */
 	padding: 0.5rem;
 }
 
@@ -122,7 +122,7 @@ dl, ol, main ul{
 }
 
 dt{
-	font-weight: bold;/* make this font display in bold weight */
+	font-weight: bold; /* make this font display in bold weight */
 }
 
 dt::before{
